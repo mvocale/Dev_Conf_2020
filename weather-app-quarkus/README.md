@@ -87,6 +87,11 @@ Now you can check again the weather for New York city and verify that the expect
 
 You can also test the liveness of the application, as described into the Microprofile health specifications, using the URL http://weather-app-quarkus-dev-conf-2020-demo.apps-crc.testing/health/live. You will see the message that is the outcome of the database check validation.
 
+You can also get the metrics of the application, as described into the Microprofile Metrics specifications, using the command:
+```sh
+$ curl -H"Accept: application/json" http://weather-app-quarkus-dev-conf-2020-demo.apps-crc.testing/metrics/application
+```
+
 ## Test outside Openshift
 If you want to run the application without Openshift you can lauch the following command:
 
